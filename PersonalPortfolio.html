@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li class="page-scroll">
+                    <a href="#welcome-section">ABOUT</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#projects">WORK</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#contact">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="welcome-section">
+            <h1 style="color: aliceblue; font-size: 60px;">Hey I am Ann</h1>
+            <h2 style="color: #46FAB8;">a web developer</h2>
+            <p style="color: aliceblue;">2021</p>
+        </section>
+        </section>
+        <section id="projects">
+            <h1>PROYECTOS</h1>
+            <div class="contenido">
+                <div class="grid-content">
+                    <h3 style="text-align: center; background-color: #2F2F2F; padding: 20px;"><a class="project-tile"
+                            style="text-decoration: none; color: #46FAB8;"
+                            href="https://codepen.io/Aaronzcm/pen/ExXObJY" target="_blank">Tribute Page</a></h3>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h1>CONTÁCTAME</h1>
+            <div class="contenido-c">
+                <div class="grid-content-c">
+                    <h3 style="text-align: center; background-color: #2F2F2F; padding: 20px;"><a id="profile-link"
+                            style="text-decoration: none; color: #46FAB8;" href="https://github.com/"
+                            target="_blank">GitHub Account</a></h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Sans', sans-serif;
+        overflow-x: hidden;
+    }
+
+    #navbar {
+        position: fixed;
+        background-color: #46FAB8;
+        height: 65px;
+        width: 100%;
+        z-index: 1;
+    }
+
+    #navbar li {
+        display: inline;
+        margin: 20px 50px;
+    }
+
+    #navbar a {
+        text-decoration: none;
+        color: #2F2F2F;
+        font-weight: 900;
+        font-size: 15px;
+    }
+
+    #navbar a:hover {
+        color: #737373;
+    }
+
+    #navbar ul {
+        display: flex;
+        justify-content: end;
+    }
+
+    #welcome-section {
+        width: 100vw;
+        height: 100vh;
+        background-color: #52535D;
+    }
+
+    #welcome-section h1,
+    h2 {
+        text-align: center;
+        position: relative;
+        top: 43%;
+    }
+
+    #welcome-section p {
+        border-top: solid 2px #2F2F2F;
+        width: 200px;
+        text-align: center;
+        margin: auto;
+        position: relative;
+        top: 43%;
+        margin-top: 10px;
+        padding-top: 6px;
+    }
+
+    .content {
+        margin: auto;
+        width: 60%;
+    }
+
+    .text1,
+    .text2 {
+        margin: auto;
+        width: 41%;
+        text-align: justify;
+        font-size: 18px;
+        color: #2F2F2F;
+        float: left;
+        margin-left: 50px;
+    }
+
+    #projects {
+        width: 100vw;
+        height: 100vh;
+        background-color: aliceblue;
+    }
+
+    #contact {
+        width: 100vw;
+        height: 100vh;
+        background-color: #52535D;
+    }
+
+    #projects h1 {
+        position: relative;
+        text-align: center;
+        top: 60px;
+        color: #2F2F2F;
+        border-bottom: 4px solid #46FAB8;
+        width: 140px;
+        margin: auto;
+        padding-bottom: 3px;
+    }
+
+    #contact h1 {
+        position: relative;
+        text-align: center;
+        top: 60px;
+        color: aliceblue;
+        border-bottom: 4px solid #46FAB8;
+        width: 160px;
+        margin: auto;
+        padding-bottom: 3px;
+    }
+
+    .contenido {
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        justify-content: center;
+        position: relative;
+        top: 160px;
+        width: 100%;
+        column-gap: 100px;
+    }
+
+    .grid-content {
+        position: relative;
+        height: 300px;
+        border: solid 1px #2F2F2F;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        background: url("https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .contenido-c {
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        justify-content: center;
+        position: relative;
+        top: 160px;
+        width: 100%;
+        column-gap: 100px;
+    }
+
+    .grid-content-c {
+        position: relative;
+        height: 300px;
+        border: solid 1px #2F2F2F;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        background: url("https://kinsta.com/es/wp-content/uploads/sites/8/2018/05/qu%C3%A9-es-github-1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    @media (max-width:500px) {
+        #navbar ul {
+            display: flex;
+            justify-content: center;
+        }
+    }
+</style>

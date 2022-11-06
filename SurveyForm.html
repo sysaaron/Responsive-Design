@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <main>
+    <div class="fondo"></div>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Than you for taking the time to help us improve the platform</p>
+    <div class="formulario">
+      <form action="" id="survey-form">
+        <label for="name" id="name-label">Name</label><br>
+        <input type="text" id="name" required placeholder="Enter your name">
+        <label for="email" id="email-label">Email</label><br>
+        <input type="email" id="email" required placeholder="Enter your Email">
+        <label for="number" id="number-label">Age (optional)</label><br>
+        <input type="number" id="number" min="12" max="100" required placeholder="Age">
+        <label for="dropdown">Which option best describes your current role?</label>
+        <select name="role" id="dropdown">
+          <option value="0">Select current role</option>
+          <option value="1">Student</option>
+          <option value="2">Full Time Job</option>
+          <option value="3">Full Time Learner</option>
+          <option value="4">Prefer not to say</option>
+          <option value="5">Other</option>
+        </select>
+        <label for="friend-label">Would you recommend freeCodeCamp to a friend?</label>
+        <label for="definitely"><input type="radio" value="definitely" name="friend" id="definitely" checked> Definitely</label>
+        <label for="maybe"><input type="radio" value="maybe" name="friend" id="maybe"> Maybe</label>
+        <label for="notsure"><input type="radio" value="notsure" name="friend" id="notsure"> Not sure</label>
+        <label for="favorite-feature">What is your favorite feature of freeCodeCamp?</label>
+        <select name="feature" id="favorite-feature">
+          <option value="0">Select an option</option>
+          <option value="1">Challenges</option>
+          <option value="2">Projects</option>
+          <option value="3">Community</option>
+          <option value="4">Open Source</option>
+        </select>
+        <label for="like">What would you like to see improved? (Check all that apply)</label>
+        <label for="frontend"><input type="checkbox" value="frontend" id="frontend"> Front-end Projects</label>
+        <label for="backend"><input type="checkbox" value="backend" id="backend"> Back-end Projects</label>
+        <label for="data"><input type="checkbox" value="data" id="data"> Data Visualization</label>
+        <label for="challenge"><input type="checkbox" value="challenge" id="challenge"> Challenges</label>
+        <label for="open"><input type="checkbox" value="open" id="open"> Open Source Community</label>
+        <label for="help"><input type="checkbox" value="help" id="help"> Gitter help rooms</label>
+        <label for="videos"><input type="checkbox" value="videos" id="videos"> Videos</label>
+        <label for="meetup"><input type="checkbox" value="meetup" id="meetup"> City Meetups</label>
+        <label for="wiki"><input type="checkbox" value="wiki" id="wiki"> Wiki</label>
+        <label for="forum"><input type="checkbox" value="forum" id="forum"> Forum</label>
+        <label for="courses"><input type="checkbox" value="courses" id="courses"> Additional Courses</label>
+        <label for="comments">Any comments or suggestions?</label>
+        <textarea name="suggestion" id="comments" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+        <input type="submit" value="Submit" id="submit">
+      </form>
+    </div>
+  <main>
+</body>
+</html>
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.fondo{
+  width: 100vw;
+  height: 100vh;
+  background: url("https://www.muycomputer.com/wp-content/uploads/2019/01/lenguaje-de-programaci%C3%B3n.jpg");
+  opacity: 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  overflow-y: scroll;
+}
+
+.formulario{
+  position: relative;
+  width: 700px;
+  height: auto;
+  background-color: #090B12;
+  opacity: 90%;
+  margin: auto;
+  top: 75px;
+  padding-top: 18px;
+  padding-bottom: 62px;
+}
+
+#title{
+  position: relative;
+  text-align: center;
+  color: #f8f8f8;
+  top: 35px;
+}
+
+#description{
+  top: 40px;
+  position: relative;
+  text-align: center;
+  color: #f8f8f8;
+  font-size: 18px;
+}
+
+#survey-form{
+  width: 100%;
+  height: auto;
+}
+
+input[type="text"],input[type="email"],input[type="number"]{
+  width: 85%;
+  display: block;
+  margin: auto;
+  height: 30px;
+  margin-top: -10px;
+  padding: 6px;
+  font-size: 14px;
+}
+
+#submit{
+  width: 87%;
+  display: block;
+  margin: auto;
+  height: 46px;
+  margin-top: 36px;
+  background-color: #59D581;
+  font-size: 16px;
+  color: #f8f8f8;
+  font-weight: bold;
+}
+
+textarea{
+  width: 85%;
+  display: block;
+  margin: auto;
+  height: 120px;
+  margin-top: 8px;
+  padding: 6px;
+  font-size: 14px;
+}
+
+#dropdown,#favorite-feature{
+  width: 87%;
+  display: block;
+  margin: auto;
+  height: 46px;
+  padding: 5px;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+label{
+  width: 85%;
+  display: block;
+  margin: auto;
+  padding-top: 30px;
+  color: #f8f8f8;
+  font-weight: bold;
+}
+</style>
